@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "roleName": "VNet Peering (Custom Role)",
+        "description": "Custom role made enable Terraform users / service principals to create peering",
+        "assignableScopes": [
+            "/subscriptions/<SUBSCRIPTION_ID>"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/read",
+                    "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/write",
+                    "Microsoft.Network/virtualNetworks/read",
+                    "Microsoft.Network/virtualNetworks/peer/action"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
